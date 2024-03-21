@@ -12,6 +12,21 @@
     <section class="searchEntry">
         <h2 class="offscreen">search engine </h2>
         <div class="logo" aria-hidden="true">XploreGlobe</div>
+        <form id="searchBar" class ="searchBar">
+            <label class="offscreen" for="search"> enter  your query: </label>
+           <input id="search" type="text" autocomplete="off"> 
+           <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="clear search terms">x</div>
+           <button id="searchButton" class="button searchButton" type="submit" aria-label="submit button">Search</button>
+        </form>
+    </section>
+    <section  class="results">
+        <h2 class="offscreen">
+       Search Results                         
+    </h2>
+    <div class ="statsBar">
+        <div id="stats" class="stats" aria-live="assertive"></div>
+    </div>
+
     </section>
     </main>
     
