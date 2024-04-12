@@ -1,3 +1,5 @@
 // sass :-syntactically awesome style sheets is a scripting language that front end developers use to create css style sheets .
 // sass is a css extention taht processses code and compiles it into css, which controls how html elements appear on a web page.
 // sass is compatible with all css versions and can make the front end coding more efficient and easier to maintain.
+@import "_base";
+@import "_sharedClasses";
