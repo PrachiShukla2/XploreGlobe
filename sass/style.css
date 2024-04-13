@@ -1,4 +1,4 @@
-footer, main {
+.searchEntry, footer, main {
   display: flex;
   align-items: center;
 }
@@ -70,5 +70,85 @@ p img {
 @media only screen and (min-width: 768px) {
   .exclaim {
     font-size: 5rem;
+  }
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.searchEntry {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 40px;
+}
+.searchEntry .logo {
+  letter-spacing: -5px;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .searchEntry .logo {
+    font-size: 4rem;
+    letter-spacing: -10px;
+  }
+}
+.searchEntry .searchBar {
+  width: 90vw;
+  display: flex;
+  border: 2px solid white;
+  border-radius: 500px;
+  padding: 0.15rem 0.25rem 0.15rem 0.75rem;
+}
+@media only screen and (min-width: 768px) {
+  .searchEntry .searchBar {
+    width: 80vw;
+    padding: 1.25rem 1.5rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .searchEntry .searchBar {
+    width: 60vw;
+  }
+}
+.searchEntry .searchBar input[type=text] {
+  flex-grow: 1;
+  font-size: 0.75rem;
+  text-align: left;
+  letter-spacing: 0.1rem;
+  border: 0;
+  outline: 0;
+  min-width: 150px;
+}
+@media only screen and (min-width: 768px) {
+  .searchEntry .searchBar input[type=text] {
+    font-size: 1.25rem;
+  }
+}
+.searchEntry .searchBar .button {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  min-width: 48px;
+  min-height: 48px;
+  outline: none;
+}
+.searchEntry .searchBar .button i {
+  font-family: "font Awesome 5 free";
+  font-size: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .searchEntry .searchBar .button i {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
