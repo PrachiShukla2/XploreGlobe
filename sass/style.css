@@ -29,20 +29,20 @@ footer {
   height: 60px;
   justify-content: center;
 }
-
-p {
+footer p {
   color: grey;
   font-size: 0.5rem;
 }
 @media only screen and (min-width: 768px) {
-  p {
+  footer p {
     font-size: 1rem;
   }
 }
-p a {
+footer p a {
   color: grey;
 }
-p img {
+
+img {
   display: block;
 }
 
@@ -106,7 +106,7 @@ p img {
 .searchEntry .searchBar {
   width: 90vw;
   display: flex;
-  border: 2px solid white;
+  border: 2px solid rgb(117, 95, 95);
   border-radius: 500px;
   padding: 0.15rem 0.25rem 0.15rem 0.75rem;
 }
@@ -151,4 +151,10 @@ p img {
   .searchEntry .searchBar .button i {
     font-size: 1.5rem;
   }
+}
+.searchEntry .searchBar .button:hover i,
+.searchEntry .searchBar .button:focus i {
+  padding-bottom: 0.5rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }/*# sourceMappingURL=style.css.map */
