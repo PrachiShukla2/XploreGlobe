@@ -74,6 +74,10 @@
                max-height: 60px;
                overflow: hidden;
                text-overflow: ellipsis;
+               @include mq(768px){
+                font-size: 1rem;
+                line-height: 28px;
+               }
             }
           }
         }
