@@ -7,7 +7,7 @@ export const deleteSearchResults = () =>{
    }
 }
 export const buildSearchResults = (resultArray) =>{
-    resultArray.foreach(result =>{
+    resultArray.forEach((result) =>{
       const resultItem = createResultItem(result);
       const resultContents  = document.createElement("div");
       resultContents.classList.add("resultContents");
@@ -62,13 +62,13 @@ export const clearStatsLine = () =>{
 
 };
 
-export const setStatLine =(numberOfResults) =>{
+export const setStatsLine =(numberOfResults) =>{
   const statLine = document.getElementById('stats');
   if (numberOfResults){
-    setStatLine.textContent = `Displaying ${numberOfResults} results.`;
+    statLine.textContent = `Displaying ${numberOfResults} results.`;
   }
   else{
-    setStatLine.textContent = "Sorry,no results.";
+    statLine.textContent = "Sorry,no results.";
 
   }
 }
